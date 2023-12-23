@@ -1,0 +1,113 @@
+.header-main {
+	// background-color: red;
+	display: flex;
+	height: 100px;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px 10%;
+}
+.hamburg {
+	display: none;
+}
+.diamond {
+	width: 10%;
+	height: 80px;
+	> a {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		> img {
+			height: 40%;
+			width: auto;
+		}
+	}
+}
+.item-container {
+	height: 100%;
+	width: 60%;
+	>div{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        > div {
+            margin: 0px 15px;
+            > a {
+                font-size: 18px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                &:hover {
+                    color: rgba(255, 255, 255, 0.545);
+                }
+            }
+        }
+    }
+}
+.flag-container {
+	width: 100px;
+	height: 100%;
+	> a {
+		height: 100%;
+		font-size: 18px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10px;
+		text-decoration: none;
+		> div {
+			color: white;
+			font-weight: bold;
+			> img {
+				height: 20px;
+				width: auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	
+	.hamburg {
+		display: block;
+		font-size: 28px;
+		color: white;
+        cursor: pointer;
+	}
+	.diamond {
+		display: none;
+	}
+
+	.item-container {
+		width:100%;
+        height: 260px;
+		position: absolute;
+        transform: translateY(-200%);
+        top: 80px;
+        left: 0px;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		>div{
+            flex-direction: column;
+            > div {
+                display: block;
+                background-color: rgb(243, 250, 244);
+                border: 0px;
+                width: 300px;
+                padding: 15px 10px;
+                > a {
+                    color: black;
+                    &:hover {
+                        color: rgba(20, 2, 2, 0.545);
+                    }
+                }
+            }
+        }
+	}
+	.in-out-meny {
+        transform: translateY(+200%);
+        
+	}
+}
