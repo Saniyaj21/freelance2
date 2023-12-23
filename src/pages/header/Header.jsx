@@ -16,10 +16,10 @@ const Header = () => {
 			<div className = {`item-container `} >
 				<div className= {`${open ? "in-out-meny":""}`}>
 				<div>
-					<Link>Hjem </Link>
+					<Link to={'/terms'}>Terms </Link>
 				</div>
 				<div>
-					<Link>Bestill </Link>
+					<Link to={'/dashboard/pricelist'}> PriceList </Link>
 				</div>
 				<div>
 					<Link>Våre Kunder </Link>
