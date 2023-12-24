@@ -7,7 +7,7 @@ import Header from "./pages/header/Header";
 function App() {
 	return (
 		<Router>
-      <Header/>
+      {/* <Header/> */}
 			<Routes>
 				<Route path='/terms' element={<Terms />} />
 				<Route path='/dashboard/pricelist' element={<Dashboard />} />
@@ -17,3 +17,5 @@ function App() {
 }
 
 export default App;
+
+export const baseUrl = "http://localhost:8080/api" 
