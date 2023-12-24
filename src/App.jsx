@@ -7,8 +7,8 @@ import Header from "./pages/header/Header";
 function App() {
 	return (
 		<Router>
-      {/* <Header/> */}
 			<Routes>
+				<Route path='/' element={<Terms />} />
 				<Route path='/terms' element={<Terms />} />
 				<Route path='/dashboard/pricelist' element={<Dashboard />} />
 			</Routes>
