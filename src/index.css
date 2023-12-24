@@ -6,11 +6,17 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
 ::-webkit-scrollbar {
 	width: 0px;
-  }
-  body{
-	font-family: sans-serif!important;
-  }
- 
+}
+body {
+	font-family: sans-serif !important;
+	padding: 0px;
+	margin: 0px;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

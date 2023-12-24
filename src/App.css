@@ -6,15 +6,4 @@
 	margin: 0px;
 	padding: 0px;
 	min-width: 320px;
-
-	background-image: url("https://storage.123fakturere.no/public/wallpapers/geiranger.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	overflow-y: scroll;
-
-	height: 100%;
-	position: fixed;
-	top: 0px;
-	left: 0px;
 }
