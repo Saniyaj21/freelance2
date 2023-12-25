@@ -6,13 +6,14 @@
 	overflow-y: scroll;
 	width: 100%;
 
-	height: 110vh;
+	height: 100vh;
 	position: fixed;
 	top: 0px;
 	left: 0px;
 }
 
 .terms-main {
+	padding-bottom: 200px;
 	> h2 {
 		text-align: center;
 		color: white;
@@ -62,7 +63,7 @@
 	}
 }
 .btn2{
-	margin-top: 10px !important;
+	// margin-top: -10px !important;
 }
 @media screen and (max-width: 1024px) {
 	.text-container {
