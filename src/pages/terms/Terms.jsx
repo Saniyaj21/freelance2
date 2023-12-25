@@ -21,28 +21,30 @@ const Terms = () => {
 	}, []);
 
 	return (
+		<>
 		<div className='terms-top'>
+			
+			</div>
 			<div className='terms-main'>
-				<Header />
-				<h2>Vilkår</h2>
-				<div className='button-box'>
-					<Link>
-						<button>Lukk og gå tilbake</button>
-					</Link>
-				</div>
-
-				<div className='text-container'>
-					<div>
-						{terms && terms.map((item) => <PCard item={item} key={item._id} />)}
-					</div>
-				</div>
-				<div className='button-box btn2'>
-					<Link>
-						<button>Lukk og gå tilbake</button>
-					</Link>
+			<Header />
+			<h2>Vilkår</h2>
+			<div className='button-box'>
+				<Link>
+					<button>Lukk og gå tilbake</button>
+				</Link>
+			</div>
+	
+			<div className='text-container'>
+				<div>
+					{terms && terms.map((item) => <PCard item={item} key={item._id} />)}
 				</div>
 			</div>
-		</div>
+			<div className='button-box btn2'>
+				<Link>
+					<button>Lukk og gå tilbake</button>
+				</Link>
+			</div>
+		</div></>
 	);
 };
 
