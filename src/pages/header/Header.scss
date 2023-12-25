@@ -5,6 +5,8 @@
 	justify-content: space-around;
 	align-items: center;
 	padding: 0px 10%;
+	z-index: 10;
+	
 }
 .hamburg {
 	display: none;
@@ -25,24 +27,26 @@
 .item-container {
 	height: 100%;
 	width: 60%;
-	>div{
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        > div {
-            margin: 0px 15px;
-            > a {
-                font-size: 18px;
-                text-decoration: none;
-                color: white;
-                font-weight: bold;
-                &:hover {
-                    color: rgba(255, 255, 255, 0.545);
-                }
-            }
-        }
-    }
+	> div {
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		> div {
+			margin: 0px 15px;
+			> a {
+				width: 100%;
+				font-size: 18px;
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
+				&:hover {
+					color: rgba(255, 255, 255, 0.545);
+				}
+			}
+		}
+	}
 }
 .flag-container {
 	width: 100px;
@@ -67,47 +71,51 @@
 }
 
 @media screen and (max-width: 1024px) {
-	
 	.hamburg {
 		display: block;
 		font-size: 28px;
 		color: white;
-        cursor: pointer;
+		cursor: pointer;
 	}
 	.diamond {
 		display: none;
 	}
 
 	.item-container {
-		width:100%;
-        height: 260px;
+		width: 100%;
+		transition: 0.5s;
 		position: absolute;
-        transform: translateY(-200%);
-        top: 80px;
-        left: 0px;
-        transition: 0.5s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-		>div{
-            flex-direction: column;
-            > div {
-                display: block;
-                background-color: rgb(243, 250, 244);
-                border: 0px;
-                width: 300px;
-                padding: 15px 10px;
-                > a {
-                    color: black;
-                    &:hover {
-                        color: rgba(20, 2, 2, 0.545);
-                    }
-                }
-            }
-        }
+		top: 80px;
+		> div {
+			width: 100%;
+			justify-content:start ;
+			flex-direction: column;
+			position: absolute;
+			top: -120%;
+			height: 260px;
+			left: 0px;
+			transition: 0.5s;
+			height: 90vh;
+
+			background-color: rgb(243, 250, 244);
+			> div {
+				display: block;
+				border: 0px;
+				min-width: 95%;
+				max-width: 700px;
+				padding: 15px 0px;
+				> a {
+					padding: 15px 30px;
+					color: black;
+					&:hover {
+						color: rgba(20, 2, 2, 0.545);
+					}
+				}
+			}
+		}
 	}
 	.in-out-meny {
-        transform: translateY(+200%);
-        
+		top: 0px !important;
+		width: 100%;
 	}
 }

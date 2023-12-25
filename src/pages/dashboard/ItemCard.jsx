@@ -1,9 +1,13 @@
 import React from "react";
 
-const ItemCard = ({item}) => {
+const ItemCard = ({ item }) => {
 	console.log(item);
 	return (
-		<div className='headings flex-center'>
+		<div
+			data-aos='fade-up'
+			data-aos-duration='700'
+			className='headings flex-center'
+		>
 			<div className='empty-logo-div'>
 				<i style={{ color: "#2c8ceb" }} className='fa-solid fa-arrow-right'></i>
 			</div>
