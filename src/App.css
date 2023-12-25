@@ -2,9 +2,8 @@
 	width: 100%;
 	display: block;
 	margin: auto;
-
+	position: relative;
 	margin: 0px;
 	padding: 0px;
 	min-width: 320px;
-	
 }
