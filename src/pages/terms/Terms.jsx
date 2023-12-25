@@ -36,7 +36,7 @@ const Terms = () => {
 						{terms && terms.map((item) => <PCard item={item} key={item._id} />)}
 					</div>
 				</div>
-				<div className='button-box'>
+				<div className='button-box btn2'>
 					<Link>
 						<button>Lukk og gå tilbake</button>
 					</Link>
