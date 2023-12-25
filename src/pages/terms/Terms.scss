@@ -1,6 +1,6 @@
 .terms-top {
 	background-image: url("https://storage.123fakturere.no/public/wallpapers/geiranger.jpg");
-	background-size: cover;
+	background-size: auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	overflow-y: scroll;
@@ -62,9 +62,7 @@
 		}
 	}
 }
-.btn2{
-	// margin-top: -10px !important;
-}
+
 @media screen and (max-width: 1024px) {
 	.text-container {
 		margin: 2%;
